@@ -24,7 +24,7 @@ const Formvalidation = () => {
     e.preventDefault();
     const regex = {
       name: /^[a-zA-Z\s]+$/,
-      number: /\d{10}/,
+      number: /^(0|[1-9]\d*)$/,
       password: /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@])[a-zA-Z\d@]{8,}$/,
       confirmPassword: /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@])[a-zA-Z\d@]{8,}$/,
     };
@@ -84,7 +84,7 @@ const Formvalidation = () => {
         <div className="form-group">
           <label htmlFor="number">Number:</label>
           <input
-            type="text"
+            type="number"
             id="number"
             name="number"
             value={formData.number}

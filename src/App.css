@@ -44,6 +44,13 @@ input[type="password"] {
   border: 1px solid #ccc;
   border-radius: 5px;
 }
+input[type="number"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
 .error {
   border-color: #ff0000;
 }
