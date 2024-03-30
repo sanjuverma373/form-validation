@@ -24,23 +24,7 @@ body {
     place-items: center;
     min-width: 320px;
     min-height: 100vh;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* form validation */
+}/*----------------------- form validation------------------------- */
 
 .registration-form {
   max-width: 400px;

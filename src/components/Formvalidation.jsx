@@ -24,7 +24,7 @@ const Formvalidation = () => {
     e.preventDefault();
     const regex = {
       name: /^[a-zA-Z\s]+$/,
-      number: /^\d{10}$/,
+      number: /\d{10}/,
       password: /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@])[a-zA-Z\d@]{8,}$/,
       confirmPassword: /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@])[a-zA-Z\d@]{8,}$/,
     };
@@ -65,7 +65,7 @@ const Formvalidation = () => {
     });
   };
   return (
-    <>
+    < >
       <form className="registration-form mt-5 " onSubmit={handleSubmit}>
         <div className="form-group">
           <label htmlFor="name">Name:</label>
